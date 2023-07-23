@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Shakahari</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navigation">
+        <div id="logo"><img src="./src/images/logo1.png" alt="logo" width="150px"></div>
+        <div class="search">
+            <input type="text" id="searchbox" placeholder="🔍Look for products">
+            <button id="searchbtn">search</button>
+        </div>
+        <div class="links">
+            <a href="#">Login</a>
+            <a href="#">About us</a>
+        </div>
+        <div id="mode"><img src="./src/images/darkmode.png" id="imode" height="45px" alt="mode" ></div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        Main section
+    </div>
+
+    <div class="footer">
+        <div class="flogo"><img src="./src/images/flogo.png" alt="logo" height="60px"></div>
+        <div class="social">
+            <div>Follow us on:</div>
+            <div id="social_logo"><a href="#"><img src="./src/images/social/facebook.png" alt="facebook" height="40px"></a>
+                <a href="#"><img src="./src/images/social/instagram.png" alt="instagram" height="40px"></a>
+                <a href="#"><img src="./src/images/social/youtube.png" alt="youtube" height="50px"></a>
+                <a href="#"><img src="./src/images/social/telegram.png" alt="telegram" height="40px"></a>
+            </div>
+        </div>
+        <div class="flinks">
+            <a href="#">Contact us</a>
+            <a href="#">About us</a>
+        </div>
+        <div class="flinks">
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+    </div>
+
+    <script>
+        $('#imode').click(function() {
+
+            var x = $('#imode').attr("src");
+            if(x=="./src/images/darkmode.png")
+            {
+                $('#imode').attr("src","./src/images/lightmode.png")
+                $('.hero').css({
+                    'background-color': 'white'
+                });
+            }
+            else
+            {
+                $('#imode').attr("src","./src/images/darkmode.png")
+                $('.hero').css({
+                    // 'background-color': '#282e36'
+                    // 'background-color': '#22272E'
+                    'background-color': 'rgb(61, 79, 105)'
+                });
+            }
+});
+    </script>
+</body>
+</html>
