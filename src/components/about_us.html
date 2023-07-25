@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Shakahari</title>
+    <link rel="stylesheet" href="../components/style/about.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navigation">
+        <div id="logo"><a href="/"><img src="../images/logo1.png" alt="logo"></a></div>
+        <div class="search">
+            <input type="text" id="searchbox" placeholder="🔍Search for products">
+            <button id="searchbtn">search</button>
+        </div>
+        <div class="other-nav-links">
+            <div class="links">
+                <a href="#">Login</a>
+            </div>
+            <div id="cart"><img src="../images/add-to-cart.png" id="cart" height="45px" alt="mode" ><span><strong>My Cart</strong></span></div>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+    </div>
+    <!-- Full-screen Menu -->
+    <div class="menu-overlay">
+        <ul class="menu">
+            <input type="text"><button>search</button>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <!-- Hero Section -->
+    <div class="hero">
+        Main section
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="flogo"><img src="../images/flogo.png" alt="logo" height="60px"></div>
+        <div class="social">
+            <div>Follow us on:</div>
+            <div id="social_logo">
+                <a href="#"><img src="../images/social/facebook.png" alt="facebook" height="40px"></a>
+                <a href="#"><img src="../images/social/instagram.png" alt="instagram" height="40px"></a>
+                <a href="#"><img src="../images/social/youtube.png" alt="youtube" height="40px"></a>
+                <a href="#"><img src="../images/social/telegram.png" alt="telegram" height="40px"></a>
+            </div>
+        </div>
+        <div class="flink">
+            <div class="flinks">
+                <a href="#">Contact us</a>
+                <a href="./about_us.html">About us</a>
+                <a href="#">Feedback</a>
+            </div>
+            <div class="flinks">
+                <a href="#">FAQs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuOverlay = document.querySelector('.menu-overlay');
+const menu = document.querySelector('.menu');
+
+hamburgerMenu.addEventListener('click', () => {
+    if(menuOverlay.style.display == "block")
+    {
+        menuOverlay.style.display = 'none';
+    }
+    else
+    {
+        menuOverlay.style.display = 'block';
+    }
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* Roboto Slab */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', serif;
+    /* font-family: 'Roboto Slab', serif; */
+}
+
+body{
+    /* background-color: #282e36; */
+    color: #ADBABE;
+    height: 100vh;
+}
+
+.navigation{
+    /* position: fixed; */
+    /* width: 100%; */
+    /* height: 14%; */
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    /* background-color: #1d2127; */
+    /* background-color: #282e36; */
+    background-color: #242830;
+}
+
+.navigation>div{
+    margin: auto;
+}
+
+#logo{
+    /* padding-left: 0.125rem; */
+    width: fit-content;
+}
+
+#logo>a>img{
+    height: 8rem;
+}
+
+.search{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 50%;
+    padding: 15px 10px 15px 10px;
+    gap: 1rem;
+}
+
+#searchbox{
+    height: 40px;
+    border-radius: 10px;
+    width: 30rem;
+    text-indent:20px;
+    text-size-adjust: auto;
+    font-size:large;
+}
+
+#searchbtn{
+    height: 45px;
+    border-radius: 15px;
+    width: 5rem;
+    font-size:large;
+    overflow: hidden;
+}
+
+.other-nav-links{
+    display: flex;
+    align-items: center;
+}
+
+/* top right bottom left */
+.links{
+    display: flex;
+    justify-content: end;
+    padding: 10px 20px 10px 10px;
+    font-size: x-large;
+    /* width: 25%; */
+}
+
+.links>a,.flinks>a{
+    color: #CAE0DB;
+    text-decoration: none;
+    padding: 10px 20px 10px 10px;
+}
+
+#cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 202, 36);
+    color: white;
+    gap: 5px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hamburger-menu{
+    display: none;
+}
+  
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+
+.hero{
+    background-color: rgb(61, 79, 105);
+    /* height: 100%; */
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.footer{
+    /* height: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #282e36;
+}
+
+.footer>div{
+    margin: auto;
+}
+
+.flink,.social>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flinks{
+    display: flex;
+    flex-direction: column;
+}
+
+#social_logo>a>img{
+    padding: 15px 20px 0px 20px;
+}
+
+/* Full-screen Menu Styles */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 15px;
+  }
+  
+  .menu a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 943px) {
+    .navigation{
+        justify-content: space-between;
+    }
+    .navigation>div{
+        margin: 5px;
+    }
+
+    #logo>a>img{
+        height: 5.5rem;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .other-nav-links{
+        display: none;
+    }
+
+    /* Hamburger Menu Icon Styles */
+    .hamburger-menu {
+        display: flex;
+        margin-left: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin: 20px;
+        z-index: 10;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    .footer>div{
+        padding-top: 20px;
+    }
+    .social>div{
+        margin: 10px 5px 10px 5px;
+    }
+    .flink{
+        gap: 30px;
+    }
+    .flinks{
+        margin: 10px 5px 10px 5px;
+    }
+
+  }
