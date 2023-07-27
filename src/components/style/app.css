@@ -197,8 +197,9 @@ body{
     }
 
     #searchbox{
-        width: auto;
+        width: 30vb;
         margin-bottom: 5px;
+        font-size: medium;
         text-indent:15px;
     }
 

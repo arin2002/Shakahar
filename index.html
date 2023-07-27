@@ -25,29 +25,29 @@
             <div id="cart-icon"><img src="./src/images/add-to-cart.png" id="cart-icon" height="45px" alt="cart-icon" ><span><strong>My Cart</strong></span></div>
         </div>
 
-        <!-- cart -->
-	    <div class="cart">
-            <h2 class="cart-title">Your Cart</h2>
-            <!-- content -->
-            <div class="cart-content"></div>
-            <!-- total -->
-            <div class="total">
-                <div class="total-title">Total</div>
-                <div class="total-price">0rs</div>
-            </div>
-
-            <!-- buy-buttom -->
-            <button type="button" class="btn-buy">Buy Now</button>
-            <!-- cart close -->
-            <i class='bx bx-x' id="close-cart"></i>
-        </div>
-
         <!-- Hamburger Menu -->
         <div class="hamburger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
-          </div>
+        </div>
+    </div>
+
+    <!-- cart -->
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- content -->
+        <div class="cart-content"></div>
+        <!-- total -->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">0rs</div>
+        </div>
+
+        <!-- buy-buttom -->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!-- cart close -->
+        <i class='bx bx-x' id="close-cart"></i>
     </div>
     <!-- Full-screen Menu -->
     <div class="menu-overlay">
@@ -58,6 +58,7 @@
             <li><a href="#">About</a></li>
         </ul>
     </div>
+
     <!-- Hero Section -->
     <div class="hero">
         Home Page
@@ -91,7 +92,7 @@
     <script>
         const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menuOverlay = document.querySelector('.menu-overlay');
-const menu = document.querySelector('.menu');
+const cartIcon2 = document.querySelector('#cart-icon2');
 
 hamburgerMenu.addEventListener('click', () => {
     if(menuOverlay.style.display == "block")
@@ -104,6 +105,9 @@ hamburgerMenu.addEventListener('click', () => {
     }
 });
 
+cartIcon2.addEventListener('click', () => {
+    menuOverlay.style.display = 'none';
+});
     </script>
 </body>
 </html>
