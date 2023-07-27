@@ -1,11 +1,17 @@
 window.onload = function(){ 
-	let cartIcon = document.querySelector('#cart-icon');
+	let cartIcon = document.querySelector('#cart-icon'); //1 for big screen
+	let cartIcon2 = document.querySelector('#cart-icon2'); //2 for small device
 let cart = document.querySelector('.cart');
 let closeCart = document.querySelector('#close-cart');
-//open
+//open 2
 cartIcon.onclick = () => {
 	cart.classList.add("active");
 };
+//open 2
+cartIcon2.onclick = () => {
+	cart.classList.add("active");
+};
+
 //close
 closeCart.onclick = () => {
 	cart.classList.remove("active");
