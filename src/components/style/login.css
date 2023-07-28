@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url(./src/images/loginPage/image.png);
+    background: url(/src/images/loginPage/image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
